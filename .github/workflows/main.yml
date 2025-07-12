@@ -9,6 +9,10 @@ jobs:
 
     steps:
       - name: print a welcome message
-        run: echo " Welcome to oue first Github Actions WorFlow "
+        run: echo " Welcome to our first Github Actions WorFlow "
         
-    
+      - name: checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: ls -la
+        
